@@ -9,7 +9,6 @@ using namespace std;
 
 int main()
 {
-	Cowboy joe("joe");
 	Cowboy lucky("Lucky Luke");
 	Dame jenny("Jenny");
 	
