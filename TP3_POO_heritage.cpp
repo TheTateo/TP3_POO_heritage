@@ -1,5 +1,5 @@
 // TP3_POO_heritage.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
+// TP3 Western
 
 #include <iostream>
 #include "Cowboy.h"
