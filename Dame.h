@@ -1,5 +1,9 @@
 #pragma once
 #include "Humain.h"
+
+class Cowboy;
+
+
 class Dame :
 	public Humain
 {
@@ -9,8 +13,12 @@ public:
 	string getNom() const;
 	string getEtat() const;
 	
-	void changeDeRobe(const string couleurRobe);
 	void sePresente();
+	void changeDeRobe(const string couleurRobe);
+	void seFaitKidnapper();
+	void seFaitLiberer(Cowboy& cowboy);
+	void hurle();
+	void remercie(const Cowboy& heros);
 
 private:
 	string couleurRobe;

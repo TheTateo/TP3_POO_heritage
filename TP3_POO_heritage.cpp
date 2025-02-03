@@ -4,28 +4,28 @@
 #include <iostream>
 #include "Cowboy.h"
 #include "Dame.h"
+#include "Brigand.h"
 
 using namespace std;
 
 int main()
 {
-	Cowboy lucky("Lucky Luke");
+	Cowboy lucky("Lucky Luke", "coca-cola");
 	Dame jenny("Jenny");
+	Brigand joe("Joe");
 	
+	// 1. La rencontre...
 	lucky.sePresente();
 	jenny.sePresente();
 
-	jenny.changeDeRobe("verte");
-	lucky.boit();
-	jenny.boit();
+	// 2. Mais un brigand arrive...
+	joe.kidnappe(jenny);
+	joe.sePresente();
 
-	/*
-	Humain* joe = new Humain("Joe");
-    cout << "Une histoire sur " << joe->getNom() << endl;
-	joe->setBoissonFavorite("whisky");
-	joe->sePresente();
-	joe->boit();
-	*/
+	// 3. Heureusement le cowboy s'interpose...
+	lucky.tire(joe);
+	lucky.emprisonne(joe);
+	lucky.libere(jenny);
 
 	return 0;
 }

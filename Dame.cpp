@@ -23,7 +23,27 @@ void Dame::changeDeRobe(const string couleurRobe)
 	cout << "(" << nom << ") -- " "Regardez ma nouvelle robe " << couleurRobe << "!" << endl;
 }
 
+void Dame::seFaitKidnapper()
+{
+	hurle();
+}
+
+void Dame::seFaitLiberer(Cowboy& cowboy)
+{
+	remercie(cowboy);
+}
+
+void Dame::hurle()
+{
+	cout << "(" << nom << ") -- " << "Au secours! je me fais kidnapper !" << endl;
+}
+
+void Dame::remercie(const Cowboy& heros)
+{
+	cout << "(" << nom << ") -- " << "Merci Lucky Luke, je suis enfin libre !" << endl;
+}
+
 void Dame::sePresente()
 {
-	cout << "(" << nom << ") -- " << " Bonjour, je suis " << getNom() << " et j'ai une jolie robe " << couleurRobe << endl;
+	cout << "(" << nom << ") -- " << "Bonjour, je suis " << getNom() << " et j'ai une jolie robe " << couleurRobe << endl;
 }
