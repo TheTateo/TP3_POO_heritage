@@ -49,7 +49,7 @@ void Brigand::sefaitEmprisonne(Cowboy & cowboy)
 	if (!estEnPrison())
 	{
 		enPrison = true;
-		cout << "(" << nom << ") -- " << "Damned, je suis fait! " << getNom() << ", tu m'as eu!" << endl;
+		cout << "(" << nom << ") -- " << "Damned, je suis fait! " << cowboy.getNom() << ", tu m'as eu!" << endl;
 	}
 }
 
