@@ -16,8 +16,8 @@ public:
 	int getPopularite();
 	string getTitre();
 
-	void setPopularite(const int popularite);
-	void setQualite(const string qualite);
+	//void setPopularite(const int popularite);
+	//void setQualite(const string qualite);
 
 	void sePresente();
 	void incrementePopularite();

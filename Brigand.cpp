@@ -29,8 +29,6 @@ int Brigand::getRecompense() const
 void Brigand::sePresente()
 {
 	cout << "(" << nom << ") -- " << "Bonjour, je suis " << getNom() << " le " << getComportement() << " et j'aime le " << getBoissonFavorite() << "." << endl;
-	cout << "(" << nom << ") -- " << "J'ai l'air " << getComportement() << " et j'ai deja kidnappe " << getNbDamesEnlevees() << " dames !" << endl;
-	cout << "(" << nom << ") -- " << "Ma tete est mise a prix a " << getRecompense() << " $ !" << endl;
 }
 
 void Brigand::kidnappe(Dame & dame)
